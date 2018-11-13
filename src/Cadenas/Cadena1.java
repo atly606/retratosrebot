@@ -13,25 +13,39 @@ public class Cadena1 {
     	int contadorO = 0;
     	int contadorU = 0;
     	for (int i = 0; i<s.length(); i++) {
-    		if(c =='a' || c == 'a') {
-    			contadorA++;
-    			break;
-    	    case 'a';
-    		case 'á';
-    }
-    		if(s.charAt(i)=='e') {
-    			contadorE++;
-    			
-    		}
-    		if(s.charAt(i)== 'i') {
-    			contadorI++;
-    		}
-    		if(s.charAt(i)=='o') {
-    			contadorO++;
-    			
-    		}
-    		if(s.charAt(i)=='u') {
-    			contadorU++;
+//			char c = palabra.charAt(i);
+//			if (c == 'a' || c == 'á') 
+//				contadorA++;
+//       	else if (c == 'e' || c == 'é')
+//			     contadorE++;
+//		    else if (c == 'i' || c == 'í')
+//			     contadorI++;
+//		    else if (c == 'o' || c == 'ó')
+//			     contadorO++;
+//		    else if (c == 'u' || c == 'ú' || c == 'ü')
+//			contadorU++;
+		switch (s.charAt(i)) {
+			case 'a':
+			case 'á':
+				contadorA++;
+				break;
+			case 'e':
+			case 'é':
+				contadorE++;
+				break;
+			case 'i':
+			case 'í':
+				contadorI++;
+				break;
+			case 'o':
+			case 'ó':
+				contadorO++;
+				break;
+			case 'u':
+			case 'ú':
+			case 'ü':
+				contadorU++;
+				break;
     		}
     		
     	}
